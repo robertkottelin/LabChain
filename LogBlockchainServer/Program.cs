@@ -6,7 +6,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        string connectionString = "Data Source=blockchain.db;Version=3;";
+        string connectionString = "Data Source=blockchain.db;";
         var databaseManager = new DatabaseManager(connectionString);
         Blockchain blockchain = new Blockchain();
 
@@ -36,12 +36,14 @@ class Program
 
         using (var reader = new StreamReader(filePath))
         {
-            string headerLine = reader.ReadLine(); // Assuming the first line is a header
 
             while (!reader.EndOfStream)
             {
-                var line = reader.ReadLine();
-                logEntries.Add(line);
+                string? line = reader.ReadLine();
+                if (line != null)
+                {
+                    logEntries.Add(line);
+                }
             }
         }
 

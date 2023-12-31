@@ -6,30 +6,26 @@ using Newtonsoft.Json;
 
 public class Blockchain
 {
-    public IList<Block> Chain { set; get; }
+    public IList<Block> Chain { get; private set; } // Ensuring that Chain is always initialized
 
     public Blockchain()
     {
-        InitializeChain();
+        Chain = new List<Block>(); // Initialize the Chain here
         AddGenesisBlock();
     }
 
-    public void InitializeChain()
-    {
-        Chain = new List<Block>();
-    }
-
-    public Block CreateGenesisBlock()
-    {
-        return new Block(DateTime.Now, null, "{}");
-    }
-
-    public void AddGenesisBlock()
+    private void AddGenesisBlock()
     {
         if (Chain.Count == 0)
         {
             Chain.Add(CreateGenesisBlock());
         }
+    }
+
+    private Block CreateGenesisBlock()
+    {
+        // Using string.Empty for the genesis block's PreviousHash
+        return new Block(DateTime.Now, string.Empty, "{}");
     }
 
     public Block GetLatestBlock()
@@ -79,7 +75,7 @@ public class Block
     {
         Index = 0;
         Timestamp = timestamp;
-        PreviousHash = previousHash;
+        PreviousHash = previousHash ?? string.Empty; // Safeguard against null values
         Data = data;
         Hash = CalculateHash();
     }
@@ -88,7 +84,7 @@ public class Block
     {
         SHA256 sha256 = SHA256.Create();
 
-        byte[] inputBytes = Encoding.ASCII.GetBytes($"{Timestamp}-{PreviousHash ?? ""}-{Data}");
+        byte[] inputBytes = Encoding.ASCII.GetBytes($"{Timestamp}-{PreviousHash}-{Data}");
         byte[] outputBytes = sha256.ComputeHash(inputBytes);
 
         return Convert.ToBase64String(outputBytes);
