@@ -1,0 +1,15 @@
+/home/robert/LabChain/Instrument/bin/Debug/net8.0/Instrument
+/home/robert/LabChain/Instrument/bin/Debug/net8.0/Instrument.deps.json
+/home/robert/LabChain/Instrument/bin/Debug/net8.0/Instrument.runtimeconfig.json
+/home/robert/LabChain/Instrument/bin/Debug/net8.0/Instrument.dll
+/home/robert/LabChain/Instrument/bin/Debug/net8.0/Instrument.pdb
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/Instrument.GeneratedMSBuildEditorConfig.editorconfig
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/Instrument.AssemblyInfoInputs.cache
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/Instrument.AssemblyInfo.cs
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/Instrument.csproj.CoreCompileInputs.cache
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/Instrument.sourcelink.json
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/Instrument.dll
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/refint/Instrument.dll
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/Instrument.pdb
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/Instrument.genruntimeconfig.cache
+/home/robert/LabChain/Instrument/obj/Debug/net8.0/ref/Instrument.dll
