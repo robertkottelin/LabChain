@@ -1,143 +1,76 @@
-
-# Directories to ignore
+# Directories #
 **/bin/
 **/obj/
+**/packages/
+**/out/
+
+# Tooling #
 **/.vs/
 **/.vscode/
-**/Properties/
-
-# Files to ignore
-*.user
-*.suo
+*.nupkg
 *.userprefs
-*.sln.docstates
-*.userosscache
-*.sln.cache
-*.csproj.user
-*.cache
-*.csproj.nuget.dgspec.json
-*.csproj.nuget.g.props
-*.csproj.nuget.g.targets
+*.usertasks
 
-# NuGet Packages
-**/packages/
-
-# ReSharper is a .NET coding add-in
-_ReSharper*/
-*ReSharper
-
-# TeamCity is a build add-in
-_TeamCity*
-
-# DotCover is a Code Coverage Tool
-*.dotCover
-
-# NCrunch
-_NCrunch_*
-.*crunch*.local.xml
-nCrunchTemp_*
-
-# Build Results of an MSBuild Project
-**/[Bb]uild[Ll]og.*
-
-# .NET Core
-project.lock.json
-project.fragment.lock.json
-artifacts/
-**/*.[Oo]bj
-**/*.[Dd]ll
-**/*.[Dd]ll.config
-**/*.[Dd]ll.mdb
-**/*.[Ee]xe
-**/*.[Ee]xe.config
-**/*.[Ee]xe.mdb
-**/*.[Pp]db
-**/*.[Cc]ache
-**/*.[Cc]scfg
-**/*.[Cc]scresp
-**/*.[Dd]ll.embedded
-
-# .NET Core - Specific cache files
-**/client/bin/
-**/client/obj/
-**/server/bin/
-**/server/obj/
-
-# Others
-*.swp
-*.bak
-*.tmp
-*.mdmp
-*.cache
-*.pidb
-*.desktop
-*.userprefs
-*.csproj.dotsettings
-*.csproj.DotSettings.user
-
-# SQLite database files
-*.db
-*.db-shm
-*.db-wal
-
-# Log files
-*.log
-
-# CSV files (if you don't want to track your CSV log files)
-*.csv
-
-# If you are using Visual Studio Code, consider the following:
-.vscode/
-
-# If you are using Visual Studio, consider the following:
-*.tlog
-*.vspscc
-*_i.c
-*_p.c
-*.ilk
-*.meta
-*.pch
-*.pdb
-*.pgc
-*.pgd
-*.rsp
-*.sbr
-*.tlb
-*.tli
-*.tlh
-*.tmp
-*.tmp_proj
-*.log
-*.vspscc
-*.vssscc
-*.user
-*.suo
-*.cache
-*.csproj
-*.vbproj
-*.sln
-*.suo
-*.tmp
-*.user
-*.userosscache
-*.dotproj
-*.pyc
-*.pyo
-*.pyd
-*.rbc
-*.c9revisions
-*.rbc
-*.sqlite
-*.sdf
-ipch/
-obj/
-[Bb]in
-[Dd]ebug*/
-[Rr]elease*/
+# Build results #
+[Dd]ebug/
+[Rr]elease/
 x64/
 x86/
-build/
 bld/
 [Bb]in/
 [Oo]bj/
 [Ll]ogs/
+*.user
+*.suo
+*.pdb
+*.exe
+*.dll
+*.cache
+*.vsp
+*.vspscc
+*.vssscc
+*.ilk
+*.aps
+*.ncb
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ext
+*.generated.cs
+*.exe.config
+*.dll.config
+
+# NuGet #
+packages/
+*.nupkg
+*.nuspec
+
+# ReSharper #
+*_ReSharper.*/
+*ReSharper/
+*.resharper
+
+# User-specific files #
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# MonoDevelop/Xamarin Studio #
+*.userprefs
+
+# Mac OS X #
+.DS_Store
+
+# SQLite #
+*.db
+*.db-shm
+*.db-wal
+
+# Logs #
+*.log
+*.log.*
+
+# CSV files (if you don't want to track your CSV log files) #
+*.csv
