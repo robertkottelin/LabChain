@@ -7,13 +7,10 @@ namespace LabChainApp
     {
         static void Main(string[] args)
         {
-            string logFilePath = "/home/robert/LabChain/instrument_log.csv";
-            GenerateLogFile(logFilePath);
-            Console.WriteLine($"Log file generated at {logFilePath}");
-        }
-
-        static void ReadLogFile(filepath)
-        {
+            // read and display the sqlite database named blochchain.db
+            string connectionString = "Data Source=blockchain.db;Version=3;";
+            var databaseManager = new DatabaseManager(connectionString);
+            
         }
     }
 }
